@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cricket Weather Prediction</string>
+    <string name="image_description">Thermometer PNG Picture</string>
+    <string name="text_info">Did you know you can determine the temperature outside by counting the number of chirps the cricket makes? Just count the number of chirps one makes in 25 seconds and place that number below: </string>
+    <string name="number_of_chirps">Number of chirps in 25 seconds</string>
+    <string name="submit">Submit</string>
+    <string name="tv_result">TextView</string>
+</resources>
