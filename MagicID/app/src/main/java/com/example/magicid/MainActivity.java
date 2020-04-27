@@ -25,6 +25,13 @@ public class MainActivity extends AppCompatActivity {
 
         show_output.setVisibility(View.GONE);
 
+        editID.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                editID.setHint("");
+            }
+        });
+
         button_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
