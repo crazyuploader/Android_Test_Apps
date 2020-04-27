@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: "crazyuploader/android_sdk:latest"
+    steps:
+      - checkout
+      - run:
+          name: Building Android Apps
+          command: |
+                  ./script.sh
