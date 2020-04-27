@@ -25,19 +25,34 @@ public class MainActivity extends AppCompatActivity {
 
         tvResult.setVisibility(View.GONE);
 
+        editInput.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                editInput.setHint("");
+            }
+        });
+
         buttonSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String enteredNumber = editInput.getText().toString().trim();
 
-                int number = Integer.parseInt(enteredNumber);
+                if (enteredNumber.length() == 0)
+                {
+                    tvResult.setText("Enter a valid number");
 
-                int calculation = (number / 3) + 4;
+                }
+                else
+                {
+                    int number = Integer.parseInt(enteredNumber);
 
-                String output = Integer.toString(calculation) + "° C";
+                    int calculation = (number / 3) + 4;
 
-                tvResult.setText(output);
+                    String output = calculation + "° C";
 
+                    tvResult.setText(output);
+
+                }
                 tvResult.setVisibility(View.VISIBLE);
 
             }
