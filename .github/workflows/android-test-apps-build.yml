@@ -1,0 +1,21 @@
+name: Android Test Apps Build
+
+on: [push, pull_request]
+
+jobs:
+  container:
+
+    runs-on: ubuntu-latest
+    container: crazyuploader/android_sdk:latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build with Gradle
+      run: |
+        ./script.sh
+
+    - name: Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: APK-Outputs
+        path: ./**/app/build/outputs/apk
