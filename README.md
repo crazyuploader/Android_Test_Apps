@@ -8,4 +8,6 @@
 
 **[`Magic ID`](MagicID)**
 
+**[`Random Dice Generator`](RandomDiceGenerator)**
+
 **[`Vector Based Images`](VectorBasedImages)**
