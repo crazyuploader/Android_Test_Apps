@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
 
             tvResult.setVisibility(View.VISIBLE);
 
-            Toast.makeText(MainActivity.this, "Process Done!", 0).show();
+            Toast.makeText(MainActivity.this, "Process Done!", Toast.LENGTH_LONG).show();
 
             super.onPostExecute(s);
         }
