@@ -10,6 +10,8 @@
 
 **[`Cricket Weather Prediction`](CricketWeatherPrediction)**
 
+**[`JSON Parser`](JSONParser)**
+
 **[`Magic ID`](MagicID)**
 
 **[`Random Dice Generator`](RandomDiceGenerator)**
